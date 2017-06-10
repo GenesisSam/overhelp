@@ -16,9 +16,5 @@ app.use(session({
 }));
 
 var router = require("./routes")(app);
-app.post("", (req, res) => {  
-  
-})
-
 
 // var router = require('./router/main')(app, fs);

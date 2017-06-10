@@ -13,13 +13,13 @@ module.exports = (express) => {
     const reqError = req.body.error;
 
     if (!reqTargetPlatform || !reqError) {
-      res.status(403);
-      res.json({ error: "Wrong parameters" });
+      res.status(400);
+      res.json({ error: "Bad parameters" });
       return;
     }
 
     try{
-      axios.get(`https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=${reqError}&site=stackoverflow&filter=!b0OfNFICOao(Ho`)
+      axios.get(`https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=${reqError}&site=stackoverflow&filter=!)(pDGc.tZ8HL2BJ6xlo-Xs4P)X9IJjTki3ZdKn30pDjT(fSPjV3tf`)
       .then((response) => {
         console.log("axios done");
         res.json({
