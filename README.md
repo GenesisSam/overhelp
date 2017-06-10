@@ -11,6 +11,9 @@ Use StackOverFlow helper
 ## OVERHELP
 This is response error help guide message when user send programmatic errors.
 
+Example
+* curl -d '{"platform":"python", "error": "out of range"}' -H "Content-Type: application/json" http://127.0.0.1:3000/overhelp
+
 ``` javascript
 [POST]
 URL: /overhelp
