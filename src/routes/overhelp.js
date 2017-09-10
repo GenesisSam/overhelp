@@ -31,6 +31,8 @@ module.exports = (express) => {
 
     sendingError = parsedError[0].trim();
 
+    //sendingError = reqError;
+
     axios.get(`https://api.stackexchange.com/2.2/search?tagged=${reqTargetPlatform}&order=desc&sort=activity&intitle=${sendingError}&site=stackoverflow&filter=!b05-dkWi.xMT(m`)
     .then((response) => {
 
